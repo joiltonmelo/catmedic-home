@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Catmedic - Tailwind css</title>
+  <link rel="stylesheet" href="./css/animation.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
+
+
+</head>
+
+<body>
+
+<header>
+    <nav class="bg-white px-4 lg:px-6 py-4">
+        <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-lg">
+            
+            <a href="#" class="flex items-center">
+                <img src="./img/logo-catmedic.svg" class="" alt="Logo Catmedic" />
+            </a>
+            
+            <div class="flex items-center lg:order-2">
+                <a href="#" class="text-white bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-4 lg:px-5 py-2 lg:py-2.5 focus:outline-none">Entrar/Login</a>
+
+                <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="mobile-menu-2" aria-expanded="false">
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                    <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button>
+            </div>
+
+            <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
+                <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0">Buscar Médico</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0">Farmácia</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0">Laboratórios</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0">Promoções</a>
+                    </li>
+                    <li>
+                        <a href="#" class="block py-2 pr-4 pl-3 text-gray-700 border-b border-gray-100 hover:bg-gray-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-primary-600 lg:p-0">Blog</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+</header>
+
+<!-- Section Hero  -->
+<section class="bg-primary-50 overflow-x-hidden p-5 lg:py-20 py-16">
+<div class="max-w-screen-lg mx-auto flex justify-between items-center max-md:flex-col max-md:gap-16">
+
+<div>
+<h1 class="text-4xl max-w-[480px]  leading-tight font-semibold font-sans">Milhares de <span class="text-primary-600 font-bold">especialistas</span> de saúde estão prontos para te ajudar</h1>
+<p class="text-lg opacity-70 mt-4">Consulta privada disponível por chamada de áudio e vídeo</p>
+
+<div class="flex gap-4 mt-8 max-md:flex-col">
+<a href="#" class="text-white text-center bg-primary-600 hover:bg-primary-700 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3  focus:outline-none">Marcar Consulta</a>
+<a href="#" class="text-black hover:text-white text-center bg-white hover:bg-gray-800 focus:ring-4 focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-3  focus:outline-none">Encontre Especialistas</a>
+</div>
+
+</div>
+
+<div class="relative">
+<img src="./img/img-hero.png" alt="Img Hero Catmedic" style="animation: float 6s ease-in-out infinite;" class="sm:mt-12 lg:mt-0 max-w-[440px]">
+<img src="./img/img-card-perfis.png" alt="Img Hero Catmedic" style="animation: float 5s ease-in-out infinite;" class="bottom-0 max-md:left-20 absolute">
+</div>
+
+</div>
+</section>
+<!-- Section Hero  -->
+
+
+<!-- Section Serviços Principais -->
+<section class="overflow-x-hidden p-5 lg:py-20 py-16">
+ <div class="max-w-screen-lg mx-auto flex justify-between items-center max-md:flex-col max-md:gap-16">
+
+  <div class="max-w-[280px]">
+    <img src="./img/icon-telemedicina.svg" alt="Icone Telemedicina">
+    <h3 class="font-semibold text-lg mt-2">Telemedicina</h3>
+    <p class="text-sm opacity-70 mt-4">Permite que pacientes consultem médicos à distância por videochamada ou mensagens, oferecendo diagnósticos, orientações e acompanhamento sem a necessidade de deslocamento.</p>
+  </div>
+
+   <div class="max-w-[280px]">
+    <img src="./img/icon-consulta.svg" alt="Agendamento de consultas">
+    <h3 class="font-semibold text-lg mt-2">Agendamento de consultas</h3>
+    <p class="text-sm opacity-70 mt-4">Facilita o agendamento de consultas médicas, tanto presenciais quanto online, permitindo que o paciente escolha horários e médicos disponíveis diretamente pelo aplicativo.</p>
+  </div>
+
+   <div class="max-w-[280px]">
+    <img src="./img/icon-prescricao.svg" alt="Icone Prescrição digital">
+    <h3 class="font-semibold text-lg mt-2">Prescrição digital</h3>
+    <p class="text-sm opacity-70 mt-4">Os médicos podem emitir receitas digitais que são enviadas diretamente aos pacientes pelo aplicativo, permitindo a compra de medicamentos em farmácias de forma rápida e prática.</p>
+  </div>
+   
+ </div> 
+</section>
+<!-- Section Serviços Principais -->
+
+
+
+<!-- Section Nossos Medicos -->
+<section class="bg-gray-50 overflow-x-hidden p-5 lg:py-20 py-16">
+<div class="max-w-screen-lg mx-auto">
+
+<h4 class="text-2xl font-semibold">Nossos Medicos</h4>
+
+<div class="flex lg:flex-wrap justify-between items-center max-md:flex-col gap-10 max-md:gap-6 mt-12">
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-1.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dra. Carolina Medeiros</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Clínica Geral | CRM 0027</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-2.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dra. Mariana Albuquerque</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Pediatria | CRM 0028</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-3.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dr. Rafael Souza</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Ginecologia e Obstetrícia  | CRM 0029</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-4.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dra. Fernanda Costa</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Dermatologia | CRM 0030</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-5.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dra. Beatriz Oliveira</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Cardiologia | CRM 0031</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-6.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dra. Luísa Pereira</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Endocrinologia | CRM 0032</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-7.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dra. Raquel Souza</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Clínica Geral | CRM 0033</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-8.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dra. Paula Nunes</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Pediatria | CRM 0034</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+<a href="#" class="max-md:w-full" target="_blank">
+<div class="flex items-center gap-4 px-6 py-5 bg-white rounded-md max-md:w-full cursor-pointer transition duration-500 hover:shadow-lg">
+    <img class="w-14 h-14 rounded-lg" src="./img/profile-picture-9.jpg" alt="">
+    <div class="font-medium dark:text-white">
+        <h5 class="text-sm font-semibold">Dr. Daniel Lima</h5>
+        <p class="text-xs text-gray-500 dark:text-gray-400">Clínica Geral  | CRM 0035</p>
+        <div class="flex items-center gap-2 mt-1.5">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg" src="./img/icon-star-yellow.svg">
+        <img class="h-3 rounded-lg opacity-30" src="./img/icon-star-normal.svg">
+        </div>
+    </div>
+</div>
+</a>
+
+</div>
+    
+</div>
+</section>
+<!-- Section Nossos Medicos -->
+
+
+<!-- Section Especialidades Populares -->
+<section class="overflow-x-hidden p-5 lg:py-20 py-16">
+<div class="max-w-screen-lg mx-auto">
+
+<div class="flex lg:items-center justify-between max-md:flex-col max-md:gap-5">
+<h4 class="text-2xl font-semibold ">Especialidades mais populares</h4>
+<a href="#"><p class="text-black hover:text-primary-600 uppercase">Todos →</p></a>
+</div>
+
+<ul class="mt-12 flex flex-wrap gap-10">
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Ginecologista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Psiquiatra</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Dermatologista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Psicólogo</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Ortopedista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Oftalmologista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Endocrinologista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Cardiologista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Urologista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Neurologista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Dentista</a></li>
+<li><a href="#" class="hover:text-primary-600 underline px-3 py-2">Nutricionista</a></li>
+</ul>
+
+</div>
+</section>
+<!-- Section Especialidades Populares -->
+
+
+<!-- Section Blog -->
+<section class="bg-gray-50 overflow-x-hidden p-5 lg:py-20 py-16">
+<div class="max-w-screen-lg mx-auto">
+
+<div class="flex lg:items-center justify-between max-md:flex-col max-md:gap-5">
+<h4 class="text-2xl font-semibold">Leia artigos de especialistas</h4>
+<a href="#"><p class="text-black hover:text-primary-600 uppercase">Ver Artigos →</p></a>
+</div>
+
+<div class="flex justify-between items-center max-md:flex-col lg:gap-10 max-md:gap-10 mt-12">
+
+<div class="max-w-sm bg-white rounded-lg shadow">
+    <a href="#">
+        <img class="rounded-t-lg" src="./img/img-artigo-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center max-md:w-full justify-center px-5 py-2 text-sm font-medium text-center text-white bg-primary-600 hover:bg-primary-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Leia mais
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="max-w-sm bg-white rounded-lg shadow">
+    <a href="#">
+        <img class="rounded-t-lg" src="./img/img-artigo-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center max-md:w-full justify-center px-5 py-2 text-sm font-medium text-center text-white bg-primary-600 hover:bg-primary-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Leia mais
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+<div class="max-w-sm bg-white rounded-lg shadow">
+    <a href="#">
+        <img class="rounded-t-lg" src="./img/img-artigo-1.jpg" alt="" />
+    </a>
+    <div class="p-5">
+        <a href="#">
+            <h5 class="mb-2 text-xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5>
+        </a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center max-md:w-full justify-center px-5 py-2 text-sm font-medium text-center text-white bg-primary-600 hover:bg-primary-700 rounded-lg focus:ring-4 focus:outline-none focus:ring-blue-300">
+            Leia mais
+             <svg class="rtl:rotate-180 w-3.5 h-3.5 ms-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+            </svg>
+        </a>
+    </div>
+</div>
+
+</div>
+
+</div>
+</section>
+<!-- Section Blog -->
+
+
+<!-- Section Blog -->
+<section class="overflow-x-hidden p-5 lg:py-20 py-10">
+<div class="max-w-screen-lg mx-auto flex flex-wrap gap-5 justify-between items-center">
+    
+<img src="./img/logo-parceiro1.png" class="h-8" alt="Logo Empresa" />
+<img src="./img/logo-parceiro2.png" class="h-8" alt="Logo Empresa" />
+<img src="./img/logo-parceiro3.png" class="h-8" alt="Logo Empresa" />
+<img src="./img/logo-parceiro4.png" class="h-8" alt="Logo Empresa" />
+<img src="./img/logo-parceiro5.png" class="h-8" alt="Logo Empresa" />
+<img src="./img/logo-parceiro6.png" class="h-8" alt="Logo Empresa" />
+
+</div>
+</section>
+<!-- Section Blog -->
+
+
+<!-- Footer Rodapé -->
+<footer class="bg-gray-800 overflow-x-hidden p-5 lg:py-20 py-10">
+<div class="max-w-screen-lg mx-auto">
+
+<div class="flex items-center justify-between mb-16">
+<a href="#"><img src="./img/logo-catmedic-white.svg" class="" alt="Logo Catmedic" /></a>
+<a href="#"><img src="./img/icon-scroll-up.svg" class="cursor-pointer hover:scale-105 transition duration-500" alt="Icone Scroll Up" /></a>
+</div>
+
+<div class="flex items-start justify-between max-md:flex-col gap-10">
+
+<div>
+<h5 class="uppercase mb-5 font-semibold text-gray-500">Para Pacientes</h5>
+<ul class="flex flex-col gap-4 ">
+<li><a href="" class="hover:text-primary-600 text-white">Procurar médicos</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">Farmácia</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">Laboratórios</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">Promoções</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">Blog</a></li>
+</ul>
+</div>
+
+<div>
+<h5 class="uppercase mb-5 font-semibold text-gray-500">Entre em contato</h5>
+<ul class="flex flex-col gap-4 ">
+<li><a href="" class="hover:text-primary-600 text-white">+55 71 99964-1283</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">iamaxchatpro@gmail.com</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">Instagram</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">Linkedin</a></li>
+</ul>
+</div>
+
+<div>
+<h5 class="uppercase mb-5 font-semibold text-gray-500">Baixar App</h5>
+<ul class="flex flex-col gap-4 ">
+<li><a href="" class="hover:text-primary-600 text-white">Play Store</a></li>
+<li><a href="" class="hover:text-primary-600 text-white">Apple Store</a></li>
+</ul>
+</div>
+
+</div>
+
+<div class="flex lg:items-center justify-between mt-16 border-t-2 border-gray-700 pt-6 max-md:flex-col gap-4">
+<div class="flex items-center gap-10">
+<a href="#" class="hover:text-primary-600 text-gray-400">Sobre</a>
+<a href="#" class="hover:text-primary-600 text-gray-400">Política de Privacidade</a>
+</div>
+<span class="block text-gray-400">2024 © CatMedic Todos direitos reservados</span>
+</div>
+
+</div>
+</footer>
+<!-- Footer Rodapé -->
+
+</body>
+</html>
